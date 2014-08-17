@@ -1,0 +1,28 @@
+<h1>Welcome to Care Access!</h1>
+
+<p>This website is designated to provide blabla. In order to access, please log in or sign up for the site </P>
+
+
+
+<% if current_user %> 
+
+<p>If you are a new user, please click 'Sign up' button above</p>
+
+<p>In order to access to this site, please click 'Log In' button above</p> 
+
+
+
+
+<%= link_to 'Check Box', pairings_path %>
+
+
+<% else %>
+
+
+<% end %>
+
+<%= link_to 'Go back to the hospital list', hospitals_path %>
+
+
+
+	

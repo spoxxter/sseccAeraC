@@ -1,0 +1,20 @@
+<h1><%= @hospital.name %></h1>
+<h1><%= @hospital.practice_field %></h1>
+<h1><%= @hospital.location %></h1>
+<h1><%= @hospital.benefit %></h1> 
+
+<p>The hospital you have chosen is <%= @hospital.name %>, in the city of <%= @hospital.location %>, practice field is <%= @hospital.practice_field %>, and the current available government benefit is <%= @hospital.benefit %> option. </p>
+
+
+<p>To select this hospital on your list, please click the 'Check Box' link below</p>
+<%= link_to "Check Box", pairings_path(hospital_id: @hospital.id),method: :post %><br>
+
+
+
+<%= link_to "Back to the list!", hospitals_path %>
+
+
+
+
+
+
